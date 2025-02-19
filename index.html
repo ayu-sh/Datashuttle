@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>DataShuttle</title>
+</head>
+
+<body class="bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 font-arial text-lg">
+  <header class="sticky top-0 shadow-md z-50 bg-blue-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div>
+        <a href="index.html" class="text-2xl font-bold text-blue-900 border-b-2 border-blue-950">DataShuttle</a>
+      </div>
+      <div class="hidden md:flex space-x-8 text-black font-semibold">
+        <a href="#home" class="hover:text-blue-900">Home</a>
+        <a href="#about" class="hover:text-blue-900">About</a>
+        <a href="#why" class=" hover:text-blue-900">Why Us</a>
+        <a href="#service" class=" hover:text-blue-900">Service</a>
+        <a href="#contact" class=" hover:text-blue-900">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <ion-icon name="menu" class="text-3xl cursor-pointer" onclick="toggleMenu()"></ion-icon>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden bg-blue-100 text-center hidden">
+      <a href="#home" class="block py-2 text-gray-700 hover:text-blue-900">Home</a>
+      <a href="#about" class="block py-2 text-gray-700 hover:text-blue-900">About</a>
+      <a href="#why" class="block py-2 text-gray-700 hover:text-blue-900">Why Us</a>
+      <a href="#service" class="block py-2 text-gray-700 hover:text-blue-900">Service</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-900">Contact</a>
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="flex flex-col lg:flex-row items-center justify-between px-6 py-12 lg:px-16 lg:py-24 ">
+    <!-- Left Content -->
+    <div class="text-center lg:text-left lg:w-1/2 space-y-6  ">
+      <h1 class="text-5xl font-bold text-gray-900">Let's Get Started</h1>
+      <h2 class="text-4xl font-bold text-purple-900">DataShuttle</h2>
+      <p class="text-gray-800 text-lg image-transform">At DataShuttle, we transform raw data into actionable insights
+        using cutting-edge Data Science, Machine Learning, Deep Learning, and AI. Our platform empowers businesses to
+        harness the full potential of their data, enabling smarter decision-making, predictive analytics, and strategic
+        growth.</p>
+
+      <!-- Subscription Form -->
+      <div class="mt-6 text-transform">
+        <p class="text-lg font-medium text-blue-950 lg:ml-4">Subscribe to our newsletter</p>
+        <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-2 my-2 mx-2 md:flex-row md:gap-0">
+          <input type="hidden" name="access_key" value="d31c690e-467a-4841-94c7-049235e47580">
+          <input type="email" name="email" id="email" placeholder="Enter your email" required
+            class="max-md:rounded-md md:rounded-l-md md:rounded-none px-4 py-3 bg-white md:w-80 border border-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-950">
+          <button type="submit"
+            class="bg-purple-900 hover:bg-purple-950 hover:cursor-pointer text-white max-md:rounded-md md:rounded-r-md md:rounded-none px-4 py-3 font-medium md:w-32">
+            Subscribe
+          </button>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Right Content (Image) -->
+    <div class="flex justify-center lg:w-1/2 mt-10 lg:mt-0 text-transform">
+      <img src="static/hero.png" alt="Hero Image"
+        class="rounded-full md:rounded-2xl shadow-xl h-64 w-64 md:h-96 md:w-96 lg:h-[500px] lg:w-[500px] object-cover border-2 border-blue-800">
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about" class="min-h-screen bg-white flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 services-transform">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 ">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-800">About Us</h2>
+      </div>
+      <div class="flex flex-wrap -mx-4 how-transform">
+        <!-- Text Content Section -->
+        <div class="w-full lg:w-1/2 px-4 md:order-2  ">
+          <div class="p-6 rounded-t-lg shadow-lg bg-blue-50 lg:rounded-lg text-justify">
+            <p class="text-gray-600 p-3">
+              At DataShuttle, we harness the power of Data Science, Machine Learning, Deep Learning, and Artificial
+              Intelligence to transform raw data into actionable insights. Our advanced technology and innovative
+              visualization tools make complex data comprehensible, enabling you to make informed and strategic business
+              decisions.
+            <p class="text-gray-600 p-3">
+              Our team of experts utilizes cutting-edge techniques to unlock hidden patterns and trends within your
+              data, providing you with a competitive edge. We believe that data is the new currency and are dedicated to
+              helping you navigate this data-driven world.
+            </p>
+            <p class="text-gray-600 p-3">
+              By delivering actionable insights, we empower you to optimize your operations, identify new opportunities,
+              and drive smarter business decisions. At DataShuttle, we are committed to your success and strive to make
+              your data work for you, ensuring you stay ahead in the market.
+            </p>
+            </p>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 px-2 mb-8 lg:mb-0  md:order-1">
+          <div class=" p-6 rounded-lg shadow-lg bg-blue-50 rounded-b-full">
+            <!-- Image Section -->
+            <img src="./static/about.png" alt="About Us" class="rounded-b-full shadow-lg w-full h-auto object-cover" />
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!---why choose us-->
+  <section id="why" class="py-12 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-5xl font-extrabold text-gray-900 m-2">Why Choose DataShuttle?</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto mb-8  ">
+        Whether you're looking to analyze trends, streamline operations, or make data-backed decisions, DataShuttle is
+        your go-to platform for unlocking the true power of data.
+      </p>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 services-transform">
+        <!-- Feature Card -->
+        <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+          <div class="text-3xl">🚀</div>
+          <h3 class="text-xl font-semibold text-gray-800 mt-4">Advanced Analytics</h3>
+          <p class="text-gray-600 mt-2">Discover hidden patterns, trends, and opportunities that drive business success.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+          <div class="text-3xl">🧠</div>
+          <h3 class="text-xl font-semibold text-gray-800 mt-4">AI-Powered Insights</h3>
+          <p class="text-gray-600 mt-2">Leverage intelligent models to predict outcomes and optimize performance.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+          <div class="text-3xl">📊</div>
+          <h3 class="text-xl font-semibold text-gray-800 mt-4">Data Visualization</h3>
+          <p class="text-gray-600 mt-2">Understand complex data effortlessly with interactive dashboards and reports.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+          <div class="text-3xl">🔍</div>
+          <h3 class="text-xl font-semibold text-gray-800 mt-4">Tailored Consulting</h3>
+          <p class="text-gray-600 mt-2">Get expert guidance to build a data-driven strategy that gives you a competitive
+            edge.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+          <div class="text-3xl">📡</div>
+          <h3 class="text-xl font-semibold text-gray-800 mt-4">Survey & Data Collection</h3>
+          <p class="text-gray-600 mt-2">Gather precise insights from the ground up for informed business moves.</p>
+        </div>
+
+        <!-- New Feature Card -->
+        <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+          <div class="text-3xl">🔗</div>
+          <h3 class="text-xl font-semibold text-gray-800 mt-4">Seamless Integration</h3>
+          <p class="text-gray-600 mt-2">Effortlessly connect with your favorite tools, platforms, and databases for a
+            smooth data workflow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- How We Work Section -->
+  <section class="bg-blue-50 py-16 px-6 min-h-screen flex items-center">
+    <div class="max-w-7xl mx-auto text-center">
+      <!-- Section Heading -->
+      <h2 class="text-4xl font-bold text-blue-900 ">OUR PROCESS</h2>
+      <h1 class="text-5xl font-extrabold text-gray-900 mt-2">How We Work</h1>
+      <p class="text-gray-700 max-w-3xl mx-auto mt-4">
+        Our streamlined process ensures we deliver high-quality solutions tailored to your business needs.
+      </p>
+
+      <!-- Process Steps -->
+      <div class="grid gap-8 mt-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-transform">
+
+        <!-- Step 1 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+          <div class="text-blue-600 text-6xl">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mt-4">Understanding Your Needs</h3>
+          <p class="text-gray-600 mt-2">We analyze your goals and challenges to craft tailored solutions.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+          <div class="text-blue-600 text-6xl">
+            <ion-icon name="pencil-outline"></ion-icon>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mt-4">Designing the Solution</h3>
+          <p class="text-gray-600 mt-2">We create innovative, scalable, and secure designs that fit your needs.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+          <div class="text-blue-600 text-6xl">
+            <ion-icon name="code-slash-outline"></ion-icon>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mt-4">Development & Implementation</h3>
+          <p class="text-gray-600 mt-2">We develop, test, and integrate solutions for seamless performance.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+          <div class="text-blue-600 text-6xl">
+            <ion-icon name="headset-outline"></ion-icon>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mt-4">Continuous Support</h3>
+          <p class="text-gray-600 mt-2">We ensure long-term success with ongoing support and improvements.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="service" class="min-h-screen  flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto ">
+      <!-- Section Heading -->
+      <div class="text-center mb-12">
+        <h2 class="text-5xl font-extrabold text-gray-900 mt-2">Our Services</h2>
+        <p class="mt-4 text-lg text-blue-700">We offer a range of high-quality services to meet your needs.</p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 image-transform">
+        <!-- Analytics -->
+        <div
+          class="bg-white rounded-lg shadow-xl p-6 text-center transform transition-transform hover:scale-105 hover:shadow-2xl">
+          <div class="text-blue-600 mb-4">
+            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-800">Analytics</h3>
+          <p class="text-gray-600 text-justify">Uncover patterns, trends, and opportunities with our advanced analytics
+            solutions. We turn complex data into clear, actionable intelligence.</p>
+        </div>
+
+        <!-- Consulting -->
+        <div
+          class="bg-white rounded-lg shadow-xl p-6 text-center transform transition-transform hover:scale-105 hover:shadow-2xl">
+          <div class="text-blue-600 mb-4">
+            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-800">Consulting</h3>
+          <p class="text-gray-600 text-justify">Tailored data strategies to fuel your business growth. Our expert
+            consulting helps you leverage data for better decisions.</p>
+        </div>
+
+        <!-- Surveying -->
+        <div
+          class="bg-white rounded-lg shadow-xl p-6 text-center transform transition-transform hover:scale-105 hover:shadow-2xl">
+          <div class="text-blue-600 mb-4">
+            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-800">Surveying</h3>
+          <p class="text-gray-600 text-justify">Collect and analyze data from the ground up. Our robust surveying
+            methods ensure accurate insights to guide your next move.</p>
+        </div>
+
+        <!-- Insights -->
+        <div
+          class="bg-white rounded-lg shadow-xl p-6 text-center transform transition-transform hover:scale-105 hover:shadow-2xl">
+          <div class="text-blue-600 mb-4">
+            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-800">Insights</h3>
+          <p class="text-gray-600 text-justify">From data to decisions—our insights help you predict outcomes, optimize
+            performance, and unlock new possibilities for your business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class=" py-12 bg-blue-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 services-transform">
+      <div class="text-center mb-12">
+        <h2 class="text-5xl font-extrabold text-gray-900 mt-2">Contact Us</h2>
+        <p class="mt-2 text-gray-600">We'd love to hear from you! Fill out the form below to get in touch.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <!-- Contact Form -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+            <input type="hidden" name="access_key" value="d31c690e-467a-4841-94c7-049235e47580">
+            <div>
+              <label for="name" class="block text-gray-700 font-bold mb-1">Name</label>
+              <input type="text" id="name" name="name"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div>
+              <label for="subject" class="block text-gray-700 font-bold mb-1">Subject</label>
+              <input type="text" id="subject" name="subject"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700 font-bold mb-1">Email</label>
+              <input type="email" id="email" name="email"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div>
+              <label for="message" class="block text-gray-700 font-bold mb-1">Message</label>
+              <textarea id="message" name="message" rows="4"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit"
+                class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Send
+                Message</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class=" p-6 rounded-lg shadow-lg flex flex-col justify-center bg-white">
+          <h3 class="text-2xl font-bold mb-4">Get In Touch</h3>
+          <p class="text-gray-600 mb-4">Feel free to reach out to us via the following methods:</p>
+          <ul class="text-gray-600 space-y-2">
+            <li><strong>Phone:</strong> (+91) 8709518221</li>
+            <li><strong>Email:</strong> info@DataShuttles.co</li>
+            <li><strong>Address:</strong> KP Colony, Bihar, Gaya, India</li>
+          </ul>
+
+          <h3 class="text-2xl font-bold mt-6 mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-600 hover:text-blue-600">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-blue-600">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-blue-600">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer class="bg-blue-950 text-white py-8 ">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-between">
+        <!-- Company Information -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+          <h3 class="text-xl font-bold mb-2">DataShuttle</h3>
+          <p class="text-gray-400 text-justify pr-8">
+            DataShuttle is a cutting-edge platform that harnesses the power of Data Science, Machine Learning, Deep
+            Learning, and AI to transform raw data into actionable insights.
+          </p>
+        </div>
+        <!-- Useful Links -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+          <h3 class="text-xl font-bold mb-2">Useful Links</h3>
+          <ul>
+            <li class="mb-2"><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+            <li class="mb-2"><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+            <li class="mb-2"><a href="#why" class="text-gray-400 hover:text-white">Why Us</a></li>
+            <li class="mb-2"><a href="#service" class="text-gray-400 hover:text-white">Services</a></li>
+            <li class="mb-2"><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Contact Information -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0 pr-6">
+          <h3 class="text-xl font-bold mb-2">Contact Us</h3>
+          <ul>
+            <li class="mb-2"><span class="text-gray-400">Phone:</span> (+91) 8709518221</li>
+            <li class="mb-2"><span class="text-gray-400">Email:</span> info@DataShuttles.co</li>
+            <li class="mb-2"><span class="text-gray-400">Address:</span> Kp Colony, Gaya, Bihar, India</li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+        <div class="w-full md:w-1/4">
+          <h3 class="text-xl font-bold mb-2">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-gray-400">
+        &copy; 2025 Data Shuttle. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./main.js" alt="Data Shuttle"></script>
+</body>
+
+</html>
