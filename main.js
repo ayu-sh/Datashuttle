@@ -10,12 +10,12 @@ const scroll = ScrollReveal({
     duration: 2000
 })
 scroll.reveal('.image-transform', {
-    origin: 'right',
+    origin: 'bottom',
     interval: 100,
     delay: 300
 })
 scroll.reveal('.text-transform', {
-    origin: 'left',
+    origin: 'top',
     interval: 100,
     delay: 300
 })
